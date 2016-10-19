@@ -30,7 +30,7 @@ mkdir demultiplexed
 
 ###Run stacks to demultiplex and trim adapter sequences
 ~/programs/stacks-1.39/process_radtags -i gzfastq -1 WIFL_Plate1_R1.fq.gz -2 WIFL_Plate1_R2.fq.gz \
-	-o ./demultiplexed -b ~/scripts/barcodes.txt -c -q -r -e sbfI --filter_illumina \
+	-o ./demultiplexed -b WIFL1barcodes.txt -c -q -r -e sbfI --filter_illumina \
 	--adapter_1 GATCGGAAGAGCACACGTCTGAACTCCAGTC --adapter_2 CACTCTTTCCCTACACGACGCTCTTCCGATCT
 
 ###Move orphaned reads to their own directory
